@@ -1,0 +1,248 @@
+/*# Global Css Start  */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* #Popular course css start */
+.a2n_course-card {
+  width: 100%;
+  max-width: 300px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+.a2n_course-card .a2n_thumbnail {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 10px;
+  max-height: 225px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.a2n_course-card .a2n_thumbnail:hover > a:first-child::before {
+  opacity: 1;
+}
+.a2n_course-card .a2n_thumbnail:hover > a:last-child {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1, 1);
+}
+.a2n_course-card .a2n_thumbnail > a:first-child {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.a2n_course-card .a2n_thumbnail > a:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+  opacity: 0;
+}
+.a2n_course-card .a2n_thumbnail img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.a2n_course-card .a2n_thumbnail > a:last-child {
+  position: absolute;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-50%, -50%) scale(1.2, 1.2);
+  top: 50%;
+  width: auto;
+  z-index: 90;
+  left: 50%;
+  right: auto;
+  opacity: 0;
+  font-size: 34px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+}
+.a2n_course-card .a2n-course__content {
+  position: relative;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta {
+  text-transform: capitalize;
+  line-height: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+  color: #7a7a7a;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta a {
+  color: #666;
+  font-weight: 400 !important;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta a:hover {
+  text-decoration: underline;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta .a2n-course__price .free {
+  color: #61ce70;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta .a2n-course__price .woocommerce-price-suffix {
+  display: none;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta .a2n-course__price del {
+  margin-right: 10px;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta .a2n-course__price ins {
+  text-decoration: none !important;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta span {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500 !important;
+  line-height: 30px;
+  color: #7a7a7a;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta span::before {
+  color: #000;
+}
+.a2n_course-card .a2n-course__content .a2n-course__meta > span + span::before {
+  content: "|";
+  margin: 0 5px;
+}
+.a2n_course-card .a2n-course__content .a2n-course__title {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.a2n_course-card .a2n-course__content .a2n-course__title a {
+  color: #000;
+  transition: 0.3s ease;
+}
+.a2n_course-card .a2n-course__content .a2n-course__title a:hover {
+  color: #ffb606;
+}
+.a2n_course-card .a2n-course__content .a2n-course__details {
+  border-top: 1px solid #ededed;
+  padding-top: 15px;
+  gap: 18px;
+}
+.a2n_course-card .a2n-course__content .a2n-course__details > span {
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+.a2n_course-card .a2n-course__content .a2n-course__details > span i {
+  font-size: 16px;
+  margin-right: 7px;
+}
+.a2n_course-card .a2n-course__content .a2n-course__details > span + span::before {
+  content: "";
+  display: none;
+}
+
+/* #Popular course css end */
+/* #New course css Start */
+.a2n-course__instructor {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.a2n-course__instructor__avatar {
+  border: 3px solid #ffffff;
+  width: 50px;
+  border-radius: 50%;
+  line-height: 1;
+  overflow: hidden;
+}
+.a2n-course__instructor__avatar img {
+  height: auto;
+  max-width: 100%;
+}
+
+.a2n-new_course-card .a2n-course__content .a2n-course__title a:hover {
+  color: #000;
+}
+.a2n-new_course-card .a2n-course__details i {
+  color: #ffb606;
+}
+.a2n-new_course-card:hover .a2n-course__details {
+  border-color: #000;
+}
+
+.a2n-course__end {
+  gap: 15px;
+  justify-content: space-between;
+}
+.a2n-course__end > span + span::before {
+  content: "";
+  display: none;
+}
+
+.star-ratings {
+  unicode-bidi: bidi-override;
+  color: #ccc;
+  font-size: 18px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.star-ratings .fill-ratings {
+  color: #ffbe00;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.star-ratings .fill-ratings span {
+  display: inline-block;
+  color: inherit !important;
+  font-size: inherit !important;
+}
+
+.star-ratings .empty-ratings {
+  padding: 0;
+  display: block;
+  z-index: 0;
+}
+.star-ratings .empty-ratings > span {
+  font-size: inherit !important;
+}
+
+/* #New course css end *//*# sourceMappingURL=styles.css.map */
