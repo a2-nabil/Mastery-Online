@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Popular Course</title>
+    <title>Blog Card</title>
     <!-- google fonts here  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,64 +15,50 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <!-- popular course start  -->
-    <div class="a2n_course-card">
-      <div class="a2n_thumbnail">
-        <a href="#" class="pc_thumbnail">
+    <!-- blog area card start  -->
+    <div class="a2n-post__article">
+      <div class="a2n-post__thumbnail">
+        <a class="post-thumbnail" href="#">
           <img
-            src="https://masteryonline.org/wp-content/uploads/2024/03/create-an-lms-website-with-learnpress-4-400x300-1.webp"
+            src="https://masteryonline.org/wp-content/uploads/2024/03/courses-9-768x443-1.webp"
             alt=""
-          />
+          /><i class="fas fa-external-link-alt"></i>
         </a>
-        <a class="a2n-course__read-more" href="#">
-          <i class="fas fa-external-link-alt"></i>
-        </a>
+        <span class="a2n-blog__categories">
+          <a class="business" href="#" title="Business"> Business </a>
+        </span>
       </div>
-      <div class="a2n-course__content">
-        <div class="a2n-course__meta">
-          <span class="a2n-course__categories">
-            <div class="course-categories">
-              <a href="#">Coaching</a>
-            </div>
+      <div class="a2n-post__content">
+        <h3 class="a2n-post__title">
+          <a href="#"> Reading </a>
+        </h3>
+        <div class="a2n-post__meta">
+          <span class="a2n-post__author">
+            <i class="far fa-user"></i> Keny White
           </span>
-          <span class="a2n-course__price">
-            <!-- price replace start  -->
-            <strong
-              ><del aria-hidden="true"
-                ><span class="woocommerce-Price-amount amount"
-                  ><bdi
-                    ><span class="woocommerce-Price-currencySymbol">£</span
-                    >424.99</bdi
-                  ></span
-                ></del
-              >
-              <ins
-                ><span class="woocommerce-Price-amount amount"
-                  ><bdi
-                    ><span class="woocommerce-Price-currencySymbol">£</span
-                    >25.00</bdi
-                  ></span
-                ></ins
-              >
-              <small class="woocommerce-price-suffix">ex Vat</small></strong
-            >
-            <!-- price replace end  -->
+          <span class="a2n-post__date">
+            <i class="far fa-calendar-check"></i> 11/03/2022
           </span>
         </div>
-        <h2 class="a2n-course__title">
-          <a href="#">How To Teach An Online Course</a>
-        </h2>
-        <div class="a2n-course__meta a2n-course__details">
-          <span class="a2n-course__count-lesson">
-            <i class="far fa-file-alt"></i>0 lessons
+        <div class="a2n-post__excerpt">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry’s standard dummy text ever
+          since the 1500s,...
+        </div>
+        <div class="a2n-post__meta a2n-post__end">
+          <span class="a2n-post__comments">
+            <i class="far fa-comment-alt"></i> No Comments
           </span>
-          <span class="a2n-course__count-student">
-            <i class="fas fa-user-friends"></i>28 students
-          </span>
+          <a
+            class="a2n-post__read-more"
+            href="#"
+          >
+            Read More
+          </a>
         </div>
       </div>
     </div>
-    <!-- popular course end  -->
+    <!-- blog area card end  -->
 
     <!-- fontawesome 5 here  -->
     <script
