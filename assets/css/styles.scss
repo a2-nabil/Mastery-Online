@@ -538,7 +538,96 @@ ol {
     }
   }
   &:hover {
-    box-shadow: 0px 4px 0px 0px #61DCA9;
+    box-shadow: 0px 4px 0px 0px #61dca9;
   }
 }
 /* #event card end */
+/* #team card start */
+.a2n-team__article {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  .a2n-team__thumbnail {
+    max-width: 190px;
+    padding: 7px;
+    margin-bottom: 25px;
+    border: 2px dashed #dcdcff;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    .a2n-team__image {
+      position: relative;
+      display: inline-block;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        background: #00000000;
+        transition: all 0.3s;
+      }
+      img {
+        border-radius: 50%;
+        height: auto;
+        max-width: 100%;
+      }
+    }
+    .a2n-team__list-social {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: all 0.5s;
+      text-align: center;
+      transform: translateY(20px);
+      .a2n-team__social {
+        display: inline-block;
+        > a {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+          padding: 0px 5px;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    &:hover {
+      .a2n-team__image {
+        &::before {
+          background: #1d171778;
+        }
+      }
+      .a2n-team__list-social {
+        opacity: 1;
+        a:hover {
+          color: #6EC1E4 !important;
+        }
+      }
+    }
+  }
+  .a2n-team__content {
+    .a2n-team__member-name {
+      margin: 0 0 8px;
+      font-size: 17px;
+      line-height: 27px;
+      font-weight: 500;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+    }
+    .a2n-team__member-position {
+      margin: 0;
+      font-size: 15px;
+      line-height: 27px;
+      font-weight: 400;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+}
+/* #team card end */
